@@ -1,6 +1,13 @@
 body {
 	background: #e8e8e8;
 }
+.navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
 
 .row.single-form {
 	box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
