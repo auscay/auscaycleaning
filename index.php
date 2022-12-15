@@ -52,7 +52,7 @@
 				<div class="carousel-caption">
 					<h5>Laundry Services</h5>
 					<p>Give your clothes professional laundry treatment with our timely laundry services. Take advantage of our free pickup and delivery anywhere around your city. Click the button below to place your order in less than a minute. </p>
-					<p><a class="btn btn-primary mt-3" href="../auscaycleaning/signup/index.html">Place Order</a></p>
+					<p><a class="btn btn-primary mt-3" href="../auscaycleaning/signup/index.php">Place Order</a></p>
 				</div>
 			</div>
 			<div class="carousel-item">
@@ -60,7 +60,7 @@
 				<div class="carousel-caption">
 					<h5>Cleaning Services</h5>
 					<p>Cleaning gets better when done in a professional manner. Our professional cleaners utilizes healthy antiseptics to give your houses, offices and environs a clean look. Click the button below to order professional cleaners around you.</p>
-					<p><a class="btn btn-primary mt-3" href="../auscaycleaning/signup/index.html">Place Order</a></p>
+					<p><a class="btn btn-primary mt-3" href="../auscaycleaning/signup/index.php">Place Order</a></p>
 				</div>
 			</div>
 			<div class="carousel-item">
@@ -68,7 +68,7 @@
 				<div class="carousel-caption">
 					<h5>Fumigation & Extermination</h5>
 					<p>Our fumigation services ensures household pests and rodents are exterminated from your house. Our extensive extermination services keeps your environs free from deadly reptiles. Click to order for fumigation services around you.</p>
-					<p><a class="btn btn-primary mt-3" href="../auscaycleaning/signup/index.html">Place Order</a></p>
+					<p><a class="btn btn-primary mt-3" href="../auscaycleaning/signup/index.php">Place Order</a></p>
 				</div>
 			</div>
 		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
@@ -159,7 +159,7 @@
 						<div class="card-body text-dark">
 							<div class="img-area mb-4"><img alt="" class="img-fluid" src="img/access.jpg"></div>
 							<h3 class="card-title">Accessibility</h3>
-							<p class="lead">Our long term goal is to make professional cleaning accessible till the all levels through the use of reasonable subscription plans.<br><br><br></p><button onclick="myFunction()" class="btn bg-primary text-light">Learn More</button>
+							<p class="lead">Our long term goal is to make professional cleaning accessible among levels through the use of reasonable subscription plans.<br><br><br></p><button onclick="myFunction()" class="btn bg-primary text-light">Learn More</button>
 						</div>
 					</div>
 				</div>
