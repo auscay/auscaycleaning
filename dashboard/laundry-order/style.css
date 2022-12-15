@@ -5,6 +5,14 @@
   body {
     background-color: #f1f1f1;
   }
+
+  .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
   
   #regForm {
     background-color: #ffffff;
@@ -38,7 +46,7 @@
   }
   
   button {
-    background-color: #04AA6D;
+    background-color: #044faa;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -156,4 +164,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+      /* style the checkout prices */
+      span.price {
+        float: right;
+        color: grey;
       }

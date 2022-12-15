@@ -127,3 +127,9 @@ slider13.oninput = function() {
 output13.innerHTML = this.value;
 output_13.innerHTML = this.value * 2800;
 }
+
+
+
+
+
+
