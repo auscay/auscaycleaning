@@ -1,5 +1,3 @@
-
-
 <?php
 include("config.php");
 
@@ -12,12 +10,26 @@ $address= $_POST["address"];
 
 $sql="insert into users(name, phone, email, address)
 values('$name', '$phone', '$email', '$address')";
-mysqli_query($conn, $sql) or die("Details not saved!");
+$result= mysqli_query($conn, $sql) or die("Details not saved!");
 echo "<p style='color:green;text-align:center;'>Details saved successfully!</p>";
 
 
+$_SESSION['name'] = $name;
+
+
+
+
+if($result) {
+header("Location: /auscaycleaning/dashboard/index.php");
+exit;
+} else{
+echo "<p style='color:red; text-align:center;'>Please try again</p>";
+}
+
 
 }
+
+
 
 
 
