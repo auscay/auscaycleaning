@@ -3,15 +3,33 @@ include("config.php");
 
 if(isset($_POST['name'])){
 
-$name= $_POST["name"];
-$email= $_POST["email"];
-$phone= $_POST["phone"];
-$address= $_POST["address"];
+$name= filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+$email= filter_var($_POST["email"], FILTER_VALIDATE_EMAIL, FILTER_SANITIZE_EMAIL);
+$phone= filter_var($_POST["phone"], FILTER_VALIDATE_INT);
+$address= filter_var($_POST["address"], FILTER_SANITIZE_STRING, FILTER_VALIDATE_INT);
+if($name === false || $email=== false || $phone=== false || $address=== false){
+	
+	echo "Error in details. Please try again";
+	header("Location: /auscaycleaning/signup/index.php");
+	exit;
+} else {
+	$name= htmlspecialchars($name);
+	$email= htmlspecialchars($email);
+	$phone= htmlspecialchars($phone);
+	$address= htmlspecialchars($address);
+	
+}
 
-$sql="insert into users(name, phone, email, address)
+
+$stmt= $conn->prepare("INSERT INTO users(name, email, phone, address)VALUES(?,?,?,?)");
+$stmt->bind_param("ssis", $name, $email, $phone, $address);
+$stmt->execute();
+
+$stmt->close();
+/*$sql="insert into users(name, phone, email, address)
 values('$name', '$phone', '$email', '$address')";
-$result= mysqli_query($conn, $sql) or die("Details not saved!");
-echo "<p style='color:green;text-align:center;'>Details saved successfully!</p>";
+$result= mysqli_query($conn, $stmt) or die("Details not saved!");
+echo "<p style='color:green;text-align:center;'>Details saved successfully!</p>"; */
 
 
 $_SESSION['name'] = $name;
@@ -19,7 +37,7 @@ $_SESSION['name'] = $name;
 
 
 
-if($result) {
+if($stmt) {
 header("Location: /auscaycleaning/dashboard/index.php");
 exit;
 } else{

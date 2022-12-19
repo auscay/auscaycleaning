@@ -95,8 +95,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="../dashboard/laundry dash.jpg" alt="Laundry" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>Laundry</b></p>
+        <p>Give your clothes professional laundry treatment with our timely laundry services. Take advantage of our free pickup and delivery anywhere around your city. Click the button below to place your order in less than a minute.</p>
         <div style="text-align: center;">
             <a href="../dashboard/laundry-order/index.html"><button class="btn default">Place Order</button></a>
         </div>
@@ -105,8 +105,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="../dashboard/cleaning_dash.jpg" alt="Cleaning" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>Cleaning</b></p>
+        <p>Cleaning gets better when done in a professional manner. Our professional cleaners utilizes healthy antiseptics to give your houses, offices and environs a clean look. Click the button below to order professional cleaners around you.</p>
         <div style="text-align: center;">
             <button class="btn default">Place Order</button>
         </div>
@@ -115,8 +115,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <div class="w3-third w3-container">
       <img src="../dashboard/fumigation_dash.jpg" alt="Fumigation" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>Fumigation</b></p>
+        <p>Our fumigation services ensures household pests and rodents are exterminated from your house. Our extensive extermination services keeps your environs free from deadly reptiles. Click to order for fumigation services around you.</p>
         <div style="text-align: center;">
             <button class="btn default">Place Order</button>
         </div>
@@ -139,19 +139,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <div class="w3-container w3-padding-large w3-grey">
     <h4 id="contact"><b>Contact Us Directly</b></h4>
     <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-      <div class="w3-third w3-dark-grey">
+      <a href="#"><div class="w3-third w3-dark-grey">
         <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
         <p>Mail</p>
-      </div>
-      <div class="w3-third w3-teal">
+      </div></a>
+      <a href="#"><div class="w3-third w3-teal">
         <p><i class="fa fa-whatsapp w3-xxlarge w3-text-light-grey"></i></p>
         <p>WhatsApp</p>
-      </div>
-      <div class="w3-third w3-dark-grey">
+      </div></a>
+      <a href="#"><div class="w3-third w3-dark-grey">
         <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
         <p>Call</p>
       </div>
-    </div>
+    </div></a>
     <hr class="w3-opacity">
     <form action="/action_page.php" target="_blank">
       <div class="w3-section">
