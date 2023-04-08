@@ -5,13 +5,32 @@ include("config.php");
 if(!isset($_SESSION['name'])){
 	header("Location: /auscaycleaning/signup/index.php");
 }
+$name= $_SESSION['name'];
+
+if(isset($_POST['submit'])){
+	$name= $_POST['Name'];
+	$email= $_POST['Email'];
+	$message= $_POST['Message'];
+	$successMsg= "Message Sent Successfully!";
+	
+	$_SESSION['successMsg']= $successMsg;
+	
+
+
+	
+	
+};
+if(isset($_SESSION['successMsg'])){
+	echo "<div class='success-message'>";
+	echo $_SESSION['successMsg'];
+	echo "</div>";
+	
+	unset($_SESSION['successMsg']);
+};
 
 
 	
 
-
-
-$name= $_SESSION['name'];
 
 
 
@@ -20,6 +39,7 @@ $name= $_SESSION['name'];
 
 
 ?>
+
 
 
 
@@ -153,7 +173,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div></a>
     <hr class="w3-opacity">
-    <form action="/action_page.php" target="_blank">
+    <form method="post">
       <div class="w3-section">
         <label>Name</label>
         <input class="w3-input w3-border" type="text" name="Name" required>
@@ -176,6 +196,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 <!-- End page content -->
 </div>
+
 
 <script>
 // Script to open and close sidebar
