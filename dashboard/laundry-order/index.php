@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,18 +30,20 @@
 			
 		</div>
 	  </nav>
-    <div class="placeorder">
-          <h3>Order By Bags</h3>
-        <div class="slidecontainer13">
-            <p>Bags: <span id="demo13"></span></p>
-
-            <input type="range" name="total" min="0" max="100" value="0" class="slider13" id="myRange13">
-            <p>Total: <strong><span id="demo113"></span></strong></p>
-        </div>
-            <div class="center-button">
-              <button type="button" class="get-quote-button">Place Order</button>
-            </div>
-    </div>
+	  
+	<form method="post" action="">  
+		<div class="placeorder">
+			  <h3>Order By Bags</h3>
+			<div class="slidecontainer13">
+				<p>Bags: <span id="demo13"></span></p>
+				<input type="range" name="total" min="0" max="100" value="0" class="slider13" id="myRange13">
+				<p>Total: <strong><span id="demo113"></span></strong></p>
+			</div>
+				<div class="center-button">
+				  <button type="submit" class="get-quote-button">Place Order</button>
+				</div>
+		</div>
+	</form>
    
   
  

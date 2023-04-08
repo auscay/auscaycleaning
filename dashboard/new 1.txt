@@ -1,0 +1,29 @@
+<?php
+if(isset($_POST['Name'])){
+	$Name=filter_var($_POST['Name'], FILTER_SANITIZE_STRING);
+	$Email=filter_var($_POST['Email'], FILTER_VALIDATE_EMAIL,);
+	$Message=filter_var($_POST['Message'], FILTER_SANITIZE_STRING);
+	if($Name === false || $Email === false || $Message === false){
+		echo "Message not sent. Please try again!";
+	}
+	else {
+		$Name = htmlspecialchars($Name);
+	    $Email = htmlspecialchars($Email);
+        $Message = htmlspecialchars($Message);
+
+	}
+	
+	$stmt= $conn->prepare("INSERT INTO messages(name, email, message)VALUES(?,?,?)");
+	$stmt->bind_param("sss", $Name, $Email, $Message);
+	$stmt->execute();
+	$stmt->close();
+	
+	if($stmt){
+		echo "Message Recieved. Check Mail for feedback!";
+	}
+}
+
+
+
+
+?>
